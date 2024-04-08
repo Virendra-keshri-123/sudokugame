@@ -6,18 +6,23 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     int day = 31;
-    return Scaffold(
+    return Scaffold( 
       appBar: AppBar(
-        title:Text("Welcome to the sudoku game"),
+        title:Text("Welcome to the sudoku game"
+        ,
+        style: TextStyle(
+              color: Colors.yellow,
+               // Change this color to your desired color
+            ),),
       ),
-      body: Center( 
+      body: Center(  
         child: Container(
           child: Text('Welcome to $day days of flutter'),
         ),
       ),
       drawer:Drawer(
-         
-      ),
+      ), 
+      
     );
   }
 }
